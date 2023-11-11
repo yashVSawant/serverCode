@@ -12,7 +12,7 @@ const requestHandler = (req,res)=>{
 
         res.write('<html>')
             res.write('<head><title>my first page</title><head>')
-            res.write(`<p>${text}</p>`);
+            res.write(`<p>text :${text}</p>`);
             res.write('<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">add</button></form></body>')
         res.write('</html>')
         return res.end();
